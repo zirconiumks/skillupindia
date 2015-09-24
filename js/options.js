@@ -196,7 +196,7 @@
 					speed: 980,
 					auto: true,
 					pause: 5500,
-					mode: 'fade',					
+					mode: 'fade',
 					pager: false,
 					autoHover: true,
 					controls: false,
@@ -310,7 +310,7 @@
 
 				jQuery(window).on('resize', function () {
 					fh = footer.height();
-					
+
 					if (jQuery(window).width() > 767) {
 						jQuery('.content-wrapper').css({
 							'margin-bottom': fh
@@ -344,7 +344,7 @@
 		              icon: 'img/map-pin.png'
 		            });
 		    }
-		    
+
 			if (mapCanvas.length) {
 		    	google.maps.event.addDomListener(window, 'load', initialize_contact_map);
 			}
@@ -472,7 +472,7 @@
 			  e = e || window.event;
 			  if (e.preventDefault)
 			      e.preventDefault();
-			  e.returnValue = false;  
+			  e.returnValue = false;
 			}
 
 			function preventDefaultForScrollKeys(e) {
@@ -493,9 +493,9 @@
 
 			function enableScroll() {
 				if (window.removeEventListener) window.removeEventListener('DOMMouseScroll', preventDefault, false);
-				window.onmousewheel = document.onmousewheel = null; 
-				window.onwheel = null; 
-				window.ontouchmove = null;  
+				window.onmousewheel = document.onmousewheel = null;
+				window.onwheel = null;
+				window.ontouchmove = null;
 				document.onkeydown = null;
 				jQuery('body').removeClass('no-scroll');
 			}
@@ -535,25 +535,25 @@
 				popupWrapper = jQuery('.register-popup .popup-wrapper'),
 				closePopup = jQuery('.register-popup .close-popup-btn'),
 				loginFormShow = jQuery('.register-popup .login-btn'),
-				registerFormShow = jQuery('.register-popup .register-btn');
+				//registerFormShow = jQuery('.register-popup .register-btn');
 
-			jQuery('.section-courses').on('click', '.register-btn, .register-to-course, .status a', function (e) {
-				e.preventDefault();
-
-				if (jQuery(window).scrollTop() > 220) {
-					popup.css({
-						'padding-top': jQuery(window).scrollTop() + 100
-					});
-				} else {
-					popup.css({'padding-top': '100px'});
-				}
-
-				setTimeout(function () {
-					popup.addClass('active');
-				}, 300);
-
-				return false;
-			}); 
+			// jQuery('.section-courses').on('click', '.register-btn, .register-to-course, .status a', function (e) {
+			// 	e.preventDefault();
+			//
+			// 	if (jQuery(window).scrollTop() > 220) {
+			// 		popup.css({
+			// 			'padding-top': jQuery(window).scrollTop() + 100
+			// 		});
+			// 	} else {
+			// 		popup.css({'padding-top': '100px'});
+			// 	}
+			//
+			// 	setTimeout(function () {
+			// 		popup.addClass('active');
+			// 	}, 300);
+			//
+			// 	return false;
+			// });
 
 			jQuery(document).on('click', function () {
 				popup.removeClass('active');
@@ -602,7 +602,7 @@
 					keepCourseBtn = removeCourseAction.find('.keep'),
 					deleteCourseBtn = removeCourseAction.find('.remove');
 
-				
+
 
 				removeCourseBtn.on('click', function (e) {
 					e.preventDefault();
@@ -674,7 +674,7 @@
 						object.addClass('visible current');
 					}
 				});
-			});	
+			});
 		},
 
 		coursesFilters: function () {
@@ -720,7 +720,7 @@
 				}
 			});
 
-			// Advanced Filters 
+			// Advanced Filters
 			advancedFiltersToggle.on('click', function (e) {
 				e.preventDefault();
 
@@ -788,7 +788,7 @@
 						onSelect: function (date) {
 							input.attr('data-selection', date);
 							input.attr('value', date);
-							obj.removeClass('open');	
+							obj.removeClass('open');
 						}
 					});
 				}
@@ -802,7 +802,7 @@
 				e.stopPropagation();
 			});
 
-			// Reset Filters  
+			// Reset Filters
 			resetBtn.on('click', function (e) {
 				e.preventDefault();
 
@@ -811,7 +811,7 @@
 
 					input.attr('value', "");
 					input.attr('data-selection', "");
-					
+
 					if (input.attr('name') === "course-category") {
 						input.attr('placeholder', "All categories (95)");
 					}
