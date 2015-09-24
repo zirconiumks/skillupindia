@@ -535,24 +535,24 @@
 				popupWrapper = jQuery('.register-popup .popup-wrapper'),
 				closePopup = jQuery('.register-popup .close-popup-btn'),
 				loginFormShow = jQuery('.register-popup .login-btn'),
-				//registerFormShow = jQuery('.register-popup .register-btn');
+				registerFormShow = jQuery('.register-popup .register-btn');
 
-			// jQuery('.section-courses').on('click', '.register-btn, .register-to-course, .status a', function (e) {
-			// 	e.preventDefault();
-			//
-			// 	if (jQuery(window).scrollTop() > 220) {
-			// 		popup.css({
-			// 			'padding-top': jQuery(window).scrollTop() + 100
-			// 		});
-			// 	} else {
-			// 		popup.css({'padding-top': '100px'});
-			// 	}
-			//
-			// 	setTimeout(function () {
-			// 		popup.addClass('active');
-			// 	}, 300);
-			//
-			// 	return false;
+			jQuery('.section-courses').on('click', '.register-btn, .register-to-course, .status a', function (e) {
+				e.preventDefault();
+
+				if (jQuery(window).scrollTop() > 220) {
+					popup.css({
+						'padding-top': jQuery(window).scrollTop() + 100
+					});
+				} else {
+					popup.css({'padding-top': '100px'});
+				}
+
+				setTimeout(function () {
+					popup.addClass('active');
+				}, 300);
+
+				return false;
 			});
 
 			jQuery(document).on('click', function () {
