@@ -553,7 +553,7 @@
 			// 	}, 300);
 			//
 			// 	return false;
-			// });
+			});
 
 			jQuery(document).on('click', function () {
 				popup.removeClass('active');
