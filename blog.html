@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>LevelUp</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+<body data-smooth-scroll="on">
+	<form class="global-search-form">
+		<div class="container">
+			<input type="text" name="search-input" class="search-input js-input" placeholder="Type here ..." />
+		</div>
+	</form>
+
+	<div class="video-popup">
+		<i class="close-popup"></i>
+
+		<div class="popup-wrapper">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10 col-md-offset-1">
+						<div class="wrapper">
+							<iframe allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		<!-- Register Poup -->
+		<div class="register-popup">
+			<div class="popup-wrapper">
+				<span class="close-popup-btn icon-cross"></span>
+
+				<form id="register-form">
+					<div class="section-header">
+						<h1>Register</h1>
+					</div>
+
+					<label>
+						<span>First Name *</span>
+						<input type="text" class="js-input" name="register-first-name" />
+					</label>
+
+					<label>
+						<span>Last Name *</span>
+						<input type="text" class="js-input" name="register-last-name" />
+					</label>
+
+					<label>
+						<span>E-mail address *</span>
+						<input type="text" class="js-input" name="register-email" />
+					</label>
+
+					<label>
+						<span>Password *</span>
+						<input type="password" class="js-input" name="register-password" />
+					</label>
+
+					<label>
+						<span>Confirm Password *</span>
+						<input type="password" class="js-input" name="register-password" />
+					</label>
+
+					<div class="btn-wrapper">
+						<button class="btn theme-btn-3">Register</button>
+					</div>
+
+					<div class="section-header small">
+						<h1><span>or</span></h1>
+					</div>
+
+					<div class="social-buttons">
+						<a href="#" class="facebook">facebook</a>
+						<a href="#" class="google-plus">google+</a>
+					</div>
+
+					<p><a href="#" class="forgot-password">Forgot password?</a></p>
+					<p>Have an account already? <a href="#" class="login-btn">Login here</a></p>
+				</form>
+
+				<form id="login-form">
+					<div class="section-header">
+						<h1>Login</h1>
+					</div>
+
+					<label>
+						<span>E-mail address *</span>
+						<input type="text" class="js-input" name="login-email" />
+					</label>
+
+					<label>
+						<span>Password *</span>
+						<input type="password" class="js-input" name="login-password" />
+					</label>
+
+					<div class="btn-wrapper">
+						<button class="btn theme-btn-3">Login</button>
+					</div>
+
+					<div class="section-header small">
+						<h1><span>or</span></h1>
+					</div>
+
+					<div class="social-buttons">
+						<a href="#" class="facebook">facebook</a>
+						<a href="#" class="google-plus">google+</a>
+					</div>
+					
+					<p><a href="#" class="forgot-password">Forgot password?</a></p>
+					<p>Don't have an account? <a href="#" class="register-btn">Register here</a></p>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-sm-2">
+						<a class="brand" href="index.html">
+							<img src="img/identity.png" alt="identity" />
+						</a>
+					</div>
+
+					<div class="col-xs-8 col-sm-10">
+						<div class="action-bar">
+							<ul class="social-block">
+								<li><a href="https://www.facebook.com/TeslaThemes"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/TeslaThemes"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.pinterest.com/teslathemes/"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="https://dribbble.com/TeslaThemes/"><i class="fa fa-dribbble"></i></a></li>
+							</ul>
+
+							<span class="search-box-toggle no-select">
+								<i class="icon fa fa-search"></i>
+							</span>
+
+							<span class="menu-toggle no-select">Menu
+								<span class="hamburger">
+									<span class="menui top-menu"></span>
+									<span class="menui mid-menu"></span>
+									<span class="menui bottom-menu"></span>
+								</span>
+							</span>
+
+							<div class="shopping-cart">
+								<span class="shopping-cart-toggle icon-carticon">
+									<span class="cart-items-total">2</span>
+								</span>
+
+								<div class="cart">
+									<ul>
+										<li class="cart-course">
+											<a href="#" class="remove-from-cart"><i class="icon-cross"></i></a>
+											<a class="cover" href="course.html">
+												<img src="img/cart-course.jpg" alt="cart course cover" />
+											</a>
+											<p class="title">
+												<a href="course.html">Technology for kids</a>
+											</p>
+											<span class="price">$59</span>
+										</li>
+
+										<li class="cart-course">
+											<a href="#" class="remove-from-cart"><i class="icon-cross"></i></a>
+											<a class="cover" href="course.html">
+												<img src="img/cart-course-2.jpg" alt="cart course cover" />
+											</a>
+											<p class="title">
+												<a href="course.html">Best measurement course</a>
+											</p>
+											<span class="price">$39</span>
+										</li>
+									</ul>
+
+									<div class="cart-action">
+										<a href="cart.html" class="cart-btn">View cart</a>
+									</div>
+								</div>
+							</div>
+
+							<a class="my-account" href="myaccount.html"><span class="icon icon-MyAccount"></span><span class="popup">My account</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="courses-grid.html">Courses</a>
+						<ul>
+							<li><a href="courses-grid.html">Grid overlay</a></li>
+							<li><a href="courses-list.html">List overlay</a></li>
+							<li><a href="course-online.html">Online Course</a></li>
+							<li><a href="course.html">Offline Course</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+						<ul>
+							<li><a href="members.html">Members</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="404.html">Error Page</a></li>
+							<li><a href="cart.html">Cart</a></li>
+							<li><a href="myaccount.html">My Account</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+						<ul>
+							<li class="current-menu-item"><a href="blog.html">Blog</a></li>
+							<li><a href="blog-sidebar.html">Blog with sidebar</a></li>
+							<li><a href="blogpost.html">Blog post</a></li>
+							<li><a href="blogpost-sidebar.html">Blog post with sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<!-- Hero Section -->
+			<section class="section-hero">
+				<div class="hero-content blog">
+					<div class="container">
+						<h1 class="heading">Blog</h1>
+					</div>
+				</div>
+			</section>
+
+			<!-- Blog Section -->
+			<section class="section-blog">
+				<div class="container">
+					<div class="blog-posts-list">
+						<div class="row isotope-container">
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post image-post">
+									<div class="post-cover">
+										<a href="blogpost.html">
+											<img src="img/blog-post-1.jpg" alt="blog post cover" />
+										</a>
+									</div>
+
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">Wordpress security: what community thinks</a></h3>
+
+										<span class="post-date">7 July 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post noimage-post">
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">TRICKS ON DEVELOPING COOL SHOPPING CART DESIGNS</a></h3>
+
+										<p class="post-excerpt">Here are the estimates for how much 20 years of childhood in Manhattan adds or takes away from child's income.</p>
+
+										<span class="post-date">23 June 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post video-post">
+									<div class="post-cover">
+										<div class="post-body">
+											<h3 class="post-title"><a href="blogpost.html">TOP 10 WEB DESIGN TRENDS TO WATCH IN 2014</a></h3>
+
+											<span class="post-date">04 July 2015</span>
+										</div>
+
+										<a href="#" class="play-button btn theme-btn-1" data-media-src="https://player.vimeo.com/video/88883554">
+											<span class="button">
+												<i class="icon-play1"></i>
+											</span>
+										</a>
+
+										<img src="img/video-post-cover.jpg" alt="video post cover" />
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post video-post">
+									<div class="post-cover">
+										<div class="post-body">
+											<h3 class="post-title"><a href="blogpost.html">TTHE IMPORTANCE OF TYPOGRAPHY IN A WEBSITE</a></h3>
+
+											<span class="post-date">04 July 2015</span>
+										</div>
+
+										<a href="#" class="play-button btn theme-btn-1" data-media-src="https://player.vimeo.com/video/123360341">
+											<span class="button">
+												<i class="icon-play1"></i>
+											</span>
+										</a>
+
+										<img src="img/video-post-cover-2.jpg" alt="video post cover" />
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post audio-post">
+									<div class="post-body">
+										<h3 class="post-title">
+											<a href="blogpost.html">Audio post<br />Eminem - Phenomenal (Audio Only)</a>
+										</h3>
+
+										<div class="post-player"></div>
+
+										<span class="post-date">27 june 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post image-post">
+									<div class="post-cover">
+										<a href="blogpost.html">
+											<img src="img/blog-post-2.jpg" alt="blog post cover" />
+										</a>
+									</div>
+
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">WORDPRESS SECURITY: WHAT COMMUNITY THINKS</a></h3>
+
+										<span class="post-date">8 August 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post noimage-post">
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">WILL IPHONE 6 BE THE GAME CHANGER IN WEB DESIGN?</a></h3>
+
+										<p class="post-excerpt">"Nulla im mi sed tellus porta mollis vitae ut libero id tempor augue, id scelensque."</p>
+
+										<span class="post-date">19 July 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post image-post">
+									<div class="post-cover">
+										<a href="blogpost.html">
+											<img src="img/blog-post-3.jpg" alt="blog post cover" />
+										</a>
+									</div>
+
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">GHOST OR WORDPRESS, WHICH ONE SHOULD I CHOOSE?</a></h3>
+
+										<span class="post-date">25 August 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post image-post">
+									<div class="post-cover">
+										<a href="blogpost.html">
+											<img src="img/blog-post-4.jpg" alt="blog post cover" />
+										</a>
+									</div>
+
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">3 WAYS TO MAKE YOUR WORDPRESS BLOG EVEN MORE VALUABLE</a></h3>
+
+										<span class="post-date">3 August 2015</span>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-4 col-sm-6 col-xs-12 isotope-item">
+								<div class="blog-post noimage-post">
+									<div class="post-body">
+										<h3 class="post-title"><a href="blogpost.html">Enhance Your Career and Employability Skills</a></h3>
+
+										<p class="post-excerpt">Learn how to make effective decisions about your future career and how to take control of your professional development.</p>
+
+										<span class="post-date">23 July 2015</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="main-loader">
+							<div class="loader-front">
+								<img src="img/loader-front.png" alt="loader front" />
+							</div>
+						</div>
+
+						<div class="btn-wrapper">
+							<a href="#" class="btn theme-btn-1 load-more">
+								<span class="button">Load more</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action Box -->
+			<div class="call-to-action-box" data-parallax-bg="img/call-to-action-bg.jpg">
+				<div class="box-img"><span></span></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h2>Enjoy our courses Today</h2>
+						</div>
+
+						<div class="col-md-5">
+							<div class="button-wrapper">
+								<a href="#" class="btn theme-btn-3">Get in touch</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="fixed">
+			<div class="container">
+				<div class="footer-wrapper">
+					<img src="img/director.png" alt="footer brand" class="footer-brand" />
+
+					<ul class="social-block">
+						<li><a href="https://twitter.com/TeslaThemes"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://dribbble.com/TeslaThemes/"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="https://www.facebook.com/TeslaThemes"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.pinterest.com/teslathemes/"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="https://www.facebook.com/TeslaThemes/photos_stream"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/grp/home?gid=5039596"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+
+					<div class="main-area">
+						<div class="menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="courses-grid.html">Courses</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="course.html">Single Course</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer-widget widget_info">
+									<p><span>Dr. Edward B. Smith</span><br />Superintendent of Public<br />Instruction</p>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="footer-widget widget_contact">
+									<p>Braavos Department of Education<br />877-644-6338 |<br /><a href="#">contact@courses.com</a></p>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="footer-widget widget_tagcloud">
+									<div class="tagcloud">
+										<a href="#">Education</a>
+										<a href="#">Courses</a>
+										<a href="#">Design</a>
+										<a href="#">Health</a>
+										<a href="#">Hospitality</a>
+										<a href="#">Business</a>
+										<a href="#">Instruction</a>
+										<a href="#">Skills</a>
+										<a href="#">Professor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="copyrights">
+						<p>Copyright 2015. Designed by <a href="http://www.teslathemes.com" target="blank">TeslaThemes</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/velocity.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>

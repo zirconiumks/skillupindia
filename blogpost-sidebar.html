@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>LevelUp</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+<body data-smooth-scroll="on">
+	<form class="global-search-form">
+		<div class="container">
+			<input type="text" name="search-input" class="search-input js-input" placeholder="Type here ..." />
+		</div>
+	</form>
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		<!-- Register Poup -->
+		<div class="register-popup">
+			<div class="popup-wrapper">
+				<span class="close-popup-btn icon-cross"></span>
+
+				<form id="register-form">
+					<div class="section-header">
+						<h1>Register</h1>
+					</div>
+
+					<label>
+						<span>First Name *</span>
+						<input type="text" class="js-input" name="register-first-name" />
+					</label>
+
+					<label>
+						<span>Last Name *</span>
+						<input type="text" class="js-input" name="register-last-name" />
+					</label>
+
+					<label>
+						<span>E-mail address *</span>
+						<input type="text" class="js-input" name="register-email" />
+					</label>
+
+					<label>
+						<span>Password *</span>
+						<input type="password" class="js-input" name="register-password" />
+					</label>
+
+					<label>
+						<span>Confirm Password *</span>
+						<input type="password" class="js-input" name="register-password" />
+					</label>
+
+					<div class="btn-wrapper">
+						<button class="btn theme-btn-3">Register</button>
+					</div>
+
+					<div class="section-header small">
+						<h1><span>or</span></h1>
+					</div>
+
+					<div class="social-buttons">
+						<a href="#" class="facebook">facebook</a>
+						<a href="#" class="google-plus">google+</a>
+					</div>
+
+					<p><a href="#" class="forgot-password">Forgot password?</a></p>
+					<p>Have an account already? <a href="#" class="login-btn">Login here</a></p>
+				</form>
+
+				<form id="login-form">
+					<div class="section-header">
+						<h1>Login</h1>
+					</div>
+
+					<label>
+						<span>E-mail address *</span>
+						<input type="text" class="js-input" name="login-email" />
+					</label>
+
+					<label>
+						<span>Password *</span>
+						<input type="password" class="js-input" name="login-password" />
+					</label>
+
+					<div class="btn-wrapper">
+						<button class="btn theme-btn-3">Login</button>
+					</div>
+
+					<div class="section-header small">
+						<h1><span>or</span></h1>
+					</div>
+
+					<div class="social-buttons">
+						<a href="#" class="facebook">facebook</a>
+						<a href="#" class="google-plus">google+</a>
+					</div>
+					
+					<p><a href="#" class="forgot-password">Forgot password?</a></p>
+					<p>Don't have an account? <a href="#" class="register-btn">Register here</a></p>
+				</form>
+			</div>
+		</div>
+		
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-4 col-sm-2">
+						<a class="brand" href="index.html">
+							<img src="img/identity.png" alt="identity" />
+						</a>
+					</div>
+
+					<div class="col-xs-8 col-sm-10">
+						<div class="action-bar">
+							<ul class="social-block">
+								<li><a href="https://www.facebook.com/TeslaThemes"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://twitter.com/TeslaThemes"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://www.pinterest.com/teslathemes/"><i class="fa fa-pinterest"></i></a></li>
+								<li><a href="https://dribbble.com/TeslaThemes/"><i class="fa fa-dribbble"></i></a></li>
+							</ul>
+
+							<span class="search-box-toggle no-select">
+								<i class="icon fa fa-search"></i>
+							</span>
+
+							<span class="menu-toggle no-select">Menu
+								<span class="hamburger">
+									<span class="menui top-menu"></span>
+									<span class="menui mid-menu"></span>
+									<span class="menui bottom-menu"></span>
+								</span>
+							</span>
+
+							<div class="shopping-cart">
+								<span class="shopping-cart-toggle icon-carticon">
+									<span class="cart-items-total">2</span>
+								</span>
+
+								<div class="cart">
+									<ul>
+										<li class="cart-course">
+											<a href="#" class="remove-from-cart"><i class="icon-cross"></i></a>
+											<a class="cover" href="course.html">
+												<img src="img/cart-course.jpg" alt="cart course cover" />
+											</a>
+											<p class="title">
+												<a href="course.html">Technology for kids</a>
+											</p>
+											<span class="price">$59</span>
+										</li>
+
+										<li class="cart-course">
+											<a href="#" class="remove-from-cart"><i class="icon-cross"></i></a>
+											<a class="cover" href="course.html">
+												<img src="img/cart-course-2.jpg" alt="cart course cover" />
+											</a>
+											<p class="title">
+												<a href="course.html">Best measurement course</a>
+											</p>
+											<span class="price">$39</span>
+										</li>
+									</ul>
+
+									<div class="cart-action">
+										<a href="cart.html" class="cart-btn">View cart</a>
+									</div>
+								</div>
+							</div>
+
+							<a class="my-account" href="myaccount.html"><span class="icon icon-MyAccount"></span><span class="popup">My account</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>
+						<a href="courses-grid.html">Courses</a>
+						<ul>
+							<li><a href="courses-grid.html">Grid overlay</a></li>
+							<li><a href="courses-list.html">List overlay</a></li>
+							<li><a href="course-online.html">Online Course</a></li>
+							<li><a href="course.html">Offline Course</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Pages</a>
+						<ul>
+							<li><a href="members.html">Members</a></li>
+							<li><a href="pricing.html">Pricing</a></li>
+							<li><a href="404.html">Error Page</a></li>
+							<li><a href="cart.html">Cart</a></li>
+							<li><a href="myaccount.html">My Account</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Blog</a>
+						<ul>
+							<li><a href="blog.html">Blog</a></li>
+							<li><a href="blog-sidebar.html">Blog with sidebar</a></li>
+							<li><a href="blogpost.html">Blog post</a></li>
+							<li class="current-menu-item"><a href="blogpost-sidebar.html">Blog post with sidebar</a></li>
+						</ul>
+					</li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<!-- Hero Section -->
+			<section class="section-hero">
+				<div class="hero-content blog">
+					<div class="container">
+						<h1 class="heading">Blog post with sidebar</h1>
+					</div>
+				</div>
+			</section>
+
+			<!-- Blog Section -->
+			<section class="section-blog">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="single-blog-post">
+								<div class="post-header">
+									<div class="post-cover">
+										<img src="img/single-post-cover.jpg" alt="single blog post cover" />
+									</div>
+
+									<div class="post-meta">
+										<h3 class="title">WORDPRESS SECURITY: WHAT COMMUNITY THINKS</h3>
+
+										<ul class="meta-info">
+											<li class="date">07 july 2015</li>
+											<li class="author">by: Tesla</li>
+											<li class="category">Category: wordpress</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="post-body">
+									<p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure.</p>
+
+									<img src="img/post-image.jpg" alt="post image" />
+
+									<p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain. These cases are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and every pain avoided.</p>
+
+									<blockquote>
+										<p>"But in certain circumstances and owing to the claims of a duty or the obligation of business it will frequently occur that pleasures have to be repudiated and annoyances accepted."</p>
+									</blockquote>
+
+									<p>The wise man therefore always holds in these matters to this principle of selection: he rejects pleasures to secure other greater pleasures, or else he endures pains to avoid worse pains.</p>
+
+									<h4>In a free hour</h4>
+
+									<p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it.</p>
+
+									<div class="tagcloud">
+										<a href="#">Advantages</a>
+										<a href="#">Courses</a>
+										<a href="#">Business</a>
+										<a href="#">Words</a>
+									</div>
+
+									<div class="share-block">
+										<div class="row row-fit-10">
+											<div class="col-xs-6 col-sm-3">
+												<a class="facebook" href="#">facebook</a>
+											</div>
+
+											<div class="col-xs-6 col-sm-3">
+												<a class="twitter" href="#">twitter</a>
+											</div>
+
+											<div class="col-xs-6 col-sm-3">
+												<a class="pinterest" href="#">pinterest</a>
+											</div>
+
+											<div class="col-xs-6 col-sm-3">
+												<a class="dribbble" href="#">dribbble</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="contact-area">
+										<h4>Leave a comment</h4>
+										<form class="comment-form">
+											<div class="input-group">
+												<input type="text" class="form-input js-input" name="username" placeholder="Your name" />
+												<span></span>
+											</div>
+											<div class="input-group">
+												<input type="text" class="form-input js-input" name="email" placeholder="e-mail address" />
+												<span></span>
+											</div>
+											<div class="input-group">
+												<textarea class="form-input js-input" name="message" placeholder="enter your comment"></textarea>
+												<span></span>
+											</div>
+
+											<div class="btn-wrapper">
+												<button class="btn theme-btn-1">
+													<span class="button">Post comment</span>
+												</button>
+											</div>
+										</form>
+									</div>
+
+									<div class="comments-area">
+										<h4>Comments</h4>
+										<ul class="comment-list">
+											<li class="comment">
+												<div class="avatar">
+													<img src="img/comment-1.jpg" alt="comment avatar" />
+												</div>
+
+												<div class="comment-header">
+													<p class="name">Alice Collins</p>
+													<p class="date">12 July</p>
+													<a class="reply-btn" href="#">Reply</a>
+												</div>
+
+												<div class="comment-body">
+													<p class="message">To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it?</p>
+												</div>
+											</li>
+
+											<li class="comment">
+												<div class="avatar">
+													<img src="img/comment-2.jpg" alt="comment avatar" />
+												</div>
+
+												<div class="comment-header">
+													<p class="name">Mike Stark</p>
+													<p class="date">12 July</p>
+													<a class="reply-btn" href="#">Reply</a>
+												</div>
+												
+												<div class="comment-body">
+													<p class="message">Find fault with a man who chooses to enjoy a pleasure that has no annoying consequences.</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+
+									<div class="post-nav">
+										<div class="row">
+											<div class="col-sm-4">
+												<div class="nav-direction-wrapper prev">
+													<a href="blogpost.html" class="nav-direction">
+														<span>Prev post</span>
+														<p>Technology for your kids</p>
+													</a>
+												</div>
+											</div>
+
+											<div class="col-sm-4">
+												<div class="navigation-info-wrapper">
+													<div class="navigation-info">
+														<p>More blogposts</p>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-sm-4">
+												<div class="nav-direction-wrapper next">
+													<a href="blogpost.html" class="nav-direction">
+														<span>Next post</span>
+														<p>Physical exercises for your body</p>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4">
+							<div class="sidebar">
+								<div class="row sidebar-isotope">
+									<div class="col-md-12 col-sm-6 col-xs-12 sidebar-isotope-item">
+										<div class="sidebar-widget widget_search">
+											<form>
+												<label>
+													<input type="text" class="form-input js-input" />
+													<span>Search</span>
+												</label>
+											</form>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-sm-6 col-xs-12 sidebar-isotope-item">
+										<div class="sidebar-widget widget_categories">
+											<h3 class="widget-title"><span>Categories</span></h3>
+
+											<ul>
+												<li><a href="#">Webdesign</a></li>
+												<li><a href="#">Music</a></li>
+												<li><a href="#">wordpress</a></li>
+												<li><a href="#">typography</a></li>
+												<li><a href="#">promotions</a></li>
+											</ul>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-sm-6 col-xs-12 sidebar-isotope-item">
+										<div class="sidebar-widget widget_from_blog">
+											<h3 class="widget-title"><span>From the blog</span></h3>
+
+											<a href="blogpost.html" class="sidebar-blogpost">
+												<div class="cover">
+													<img src="img/sidebar-blogpost.jpg" alt="blog post cover" />
+												</div>
+
+												<p>Premium wordpress theme</p>
+
+												<p class="reveal-on-hover">Read more</p>
+											</a>
+
+											<a href="blogpost.html" class="sidebar-blogpost">
+												<div class="cover">
+													<img src="img/sidebar-blogpost-2.jpg" alt="blog post cover" />
+												</div>
+
+												<p>Wordpress security</p>
+
+												<p class="reveal-on-hover">Read more</p>
+											</a>
+
+											<a href="blogpost.html" class="sidebar-blogpost">
+												<div class="cover">
+													<img src="img/sidebar-blogpost.jpg" alt="blog post cover" />
+												</div>
+
+												<p>Premium wordpress theme</p>
+
+												<p class="reveal-on-hover">Read more</p>
+											</a>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-sm-6 col-xs-12 sidebar-isotope-item">
+										<div class="sidebar-widget widget_flickr">
+											<h3 class="widget-title"><span>Flickr</span></h3>
+
+											<ul class="flickr_widget" data-userid="134702477@N06" data-items="8"></ul>
+										</div>
+									</div>
+
+									<div class="col-md-12 col-sm-6 col-xs-12 sidebar-isotope-item">
+										<div class="sidebar-widget widget_facebook">
+											<h3 class="widget-title"><span>Facebook video</span></h3>
+
+											<div class="fb-video" data-href="https://www.facebook.com/FacebookDevelopers/videos/10152454700553553/" data-allowfullscreen="true"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Call to Action Box -->
+			<div class="call-to-action-box" data-parallax-bg="img/call-to-action-bg.jpg">
+				<div class="box-img"><span></span></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-7">
+							<h2>Enjoy our courses Today</h2>
+						</div>
+
+						<div class="col-md-5">
+							<div class="button-wrapper">
+								<a href="#" class="btn theme-btn-3">Get in touch</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer -->
+		<footer class="fixed">
+			<div class="container">
+				<div class="footer-wrapper">
+					<img src="img/director.png" alt="footer brand" class="footer-brand" />
+
+					<ul class="social-block">
+						<li><a href="https://twitter.com/TeslaThemes"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="https://dribbble.com/TeslaThemes/"><i class="fa fa-dribbble"></i></a></li>
+						<li><a href="https://www.facebook.com/TeslaThemes"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="https://www.pinterest.com/teslathemes/"><i class="fa fa-pinterest"></i></a></li>
+						<li><a href="https://www.facebook.com/TeslaThemes/photos_stream"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="https://www.linkedin.com/grp/home?gid=5039596"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+
+					<div class="main-area">
+						<div class="menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="courses-grid.html">Courses</a></li>
+								<li><a href="pricing.html">Pricing</a></li>
+								<li><a href="course.html">Single Course</a></li>
+								<li><a href="contact.html">Contact</a></li>
+							</ul>
+						</div>
+
+						<div class="row">
+							<div class="col-md-4">
+								<div class="footer-widget widget_info">
+									<p><span>Dr. Edward B. Smith</span><br />Superintendent of Public<br />Instruction</p>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="footer-widget widget_contact">
+									<p>Braavos Department of Education<br />877-644-6338 |<br /><a href="#">contact@courses.com</a></p>
+								</div>
+							</div>
+
+							<div class="col-md-4">
+								<div class="footer-widget widget_tagcloud">
+									<div class="tagcloud">
+										<a href="#">Education</a>
+										<a href="#">Courses</a>
+										<a href="#">Design</a>
+										<a href="#">Health</a>
+										<a href="#">Hospitality</a>
+										<a href="#">Business</a>
+										<a href="#">Instruction</a>
+										<a href="#">Skills</a>
+										<a href="#">Professor</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="copyrights">
+						<p>Copyright 2015. Designed by <a href="http://www.teslathemes.com" target="blank">TeslaThemes</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<div id="fb-root"></div>
+	<script>
+		(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/velocity.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>
