@@ -1,0 +1,197 @@
+<style>
+.marquee {
+	width: 100%;
+	height: 150px;
+	margin: 25px auto;
+	overflow: hidden;
+	position: relative;
+	-webkit-transition: background-color 350ms;
+	-moz-transition: background-color 350ms;
+    transition: background-color 350ms;
+}
+
+.marquee p {
+	position: absolute;
+	font-family: Tahoma, Arial, sans-serif;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	line-height: 20px;
+	text-align: left;
+	color: #000;
+	transform:translateX(100%);
+	-moz-transform:translateX(100%);
+	-webkit-transform:translateX(100%);
+}
+.marquee p:nth-child(1) {
+	animation: left-one 20s ease infinite;
+	-moz-animation: left-one 20s ease infinite;
+	-webkit-animation: left-one 20s ease infinite;
+}
+.marquee p:nth-child(2) {
+	animation: left-two 20s ease infinite;
+	-moz-animation: left-two 20s ease infinite;
+	-webkit-animation: left-two 20s ease infinite;
+}
+.marquee p:nth-child(3) {
+    border:red solid 1px;
+	animation: left-three 20s ease infinite;
+	-moz-animation: left-three 20s ease infinite;
+	-webkit-animation: left-three 20s ease infinite;
+}
+
+/*================================
+	Move the Marquee to the Left
+==================================*/
+
+/** Mozilla Firefox Keyframes **/
+@-moz-keyframes left-one {
+	0%	{
+		-moz-transform:translateX(100%);
+	}
+	10% {
+		-moz-transform:translateX(0);
+	}
+	40% {
+		-moz-transform:translateX(0);
+	}
+	50% {
+		-moz-transform:translateX(-100%);
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+@-moz-keyframes left-two {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+	50% {
+		-moz-transform:translateX(100%);
+	}
+	60% {
+		-moz-transform:translateX(0);
+	}
+	90% {
+		-moz-transform:translateX(0);
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+@-moz-keyframes left-three {
+	0% {
+		-moz-transform:translateX(100%);
+	}
+	50% {
+		-moz-transform:translateX(100%);
+	}
+	60% {
+		-moz-transform:translateX(0);
+	}
+	90% {
+		-moz-transform:translateX(0);
+	}
+	100%{
+		-moz-transform:translateX(-100%);
+	}
+}
+/** Webkit Keyframes **/
+@-webkit-keyframes left-one {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	10% {
+		-webkit-transform:translateX(0);
+	}
+	40% {
+		-webkit-transform:translateX(0);
+	}
+	50% {
+		-webkit-transform:translateX(-100%);
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+@-webkit-keyframes left-two {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	50% {
+		-webkit-transform:translateX(100%);
+	}
+	60% {
+		-webkit-transform:translateX(0);
+	}
+	90% {
+		-webkit-transform:translateX(0);
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+@-webkit-keyframes left-three {
+	0% {
+		-webkit-transform:translateX(100%);
+	}
+	50% {
+		-webkit-transform:translateX(100%);
+	}
+	60% {
+		-webkit-transform:translateX(0);
+	}
+	90% {
+		-webkit-transform:translateX(0);
+	}
+	100%{
+		-webkit-transform:translateX(-100%);
+	}
+}
+
+@media (min-width: 1600px) {
+    #container #landing-img-wrapper {height: 415px; }
+}
+</style>
+<edcast-header signin="true"></edcast-header>
+<div class="container-home" id="container">
+    <div class="row fix-width-container" style="margin-bottom:-50px;">
+        <form action="http://www.edcast.com/corp/educatorsignup?ref=skillupindia.org" method="post" target="_blank" style="position:relative; float:right;">
+            <input aria-label="Submit Sign up form" class="button sign-up-button" data-disable-with="Please wait..." name="commit" type="submit" value="Publish a Course !" style="font-size:16px; font-weight:bold;">
+        </form>
+    </div>
+    <banner float-kc="true" kc-text="Knowledge Cloud"></banner>
+    <div id="bottom-container">
+        <div class="row row-max-100 mt20px offering-filter-row" id="sign-up-teacher" style="display: block">
+            <div class="small-12 medium-6 medium-push-6 columns"></div>
+        <div class="row row-max-100 mt20px offering-filter-row" id="searchbar" style="display: block">
+            <div class="small-12 medium-6 medium-push-6 columns"></div>
+            <searchbar></searchbar>
+            <div class="small-12 medium-5 medium-pull-7 columns">
+                <ul class="tabs home-page-filter-tabs" data-tab="" role="tablist">
+                    <li class="tab-title active" role="presentational">
+                        <a aria-selected="true" href="#" role="tab" tabindex="0"> Featured Courses</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tabs-content">
+            <section aria-hidden="false" class="content home-p active" id="panel2-1" role="tabpanel">
+                <featuredcourses></featuredcourses>
+            </section>
+        </div>
+    </div>
+    <div class="reveal-modal large" data-reveal="" id="introVideo" onkeydown="esc(this,event)" role="dialog" tabindex="0">
+        <div class="flex-video">
+            <iframe allowfullscreen="" frameborder="0" id="intro-iframe" src="about:blank" style="min-height: 268px; width: 100%;"></iframe>
+        </div>
+    </div>
+    <div class="row row-max-100 mt20px">
+        <div class="marquee">
+            <p>"Access to open, free education fosters the entrepreneurial pursuits of youth to focus on innovative applications for wealth generation, employment creation and global competition," said Narayana Murthy, Chairman of iCREATE’s Advisory board. iCREATE is an independently-run center that facilitates "Next Generation Entrepreneurship" and is based in Ahmedabad.</p>
+            <p>"USIBC Education Foundation will support advancing the SKILL UP INDIA initiative under its education and skill building efforts. Scaling up skill development is critical to India’s growth and to unleashing its entrepreneurial potential of becoming a digital and manufacturing power," said Dr. Mukesh Aghi, President USIBC. "With USIBC’s initiative of partnering with the National Skills Development Corporation to support skill development in India, SKILL UP INDIA will be an important driver in offering free online education and skilling opportunities to India's emerging workforce and youth."</p>
+            <p>"IIT Gandhinagar has several initiatives such as our Summer Research Internship Program (SRIP) to democratize education and research in India and support programs like SKILL UP INDIA that take this agenda further," said Sudhir K. Jain, President- IIIT –GN.</p>
+        </div>
+    </div>
+</div>
+ <footer class="public-page-footer" id="footer"><edcast-footer></edcast-footer></footer>
